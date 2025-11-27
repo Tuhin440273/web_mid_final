@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Selector</title>
+    <style>
+        #weather-img {
+            width: 120px;
+            margin-top: 15px;
+            display: none;
+        }
+        #error {
+            color: red;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        #weather-box {
+            margin-top: 15px;
+        }
+
+        #temp {
+            font-size: 20px;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Select a District</h2>
+
+    <select id="district">
+        <option value="">-- Select District --</option>
+        <option value="Dhaka">Dhaka</option>
+        <option value="Sylhet">Sylhet</option>
+        <option value="Khulna">Khulna</option>
+    </select>
+
+    <button onclick="showWeather()">Show Weather</button>
+
+    <p id="error"></p>
+
+    <div id="weather-box">
+        <img id="weather-img" src="" alt="Weather">
+        <h3 id="temp"></h3>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

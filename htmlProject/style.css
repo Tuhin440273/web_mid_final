@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffb3ba 0%, #ffdfba 50%, #bae1ff 100%);
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 50px;
+    padding: 15px 30px;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: 600;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.navbar ul li a:hover {
+    opacity: 1;
+}
+
+.cta-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.title {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.description {
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+
+.read-more-button {
+    background: rgba(40, 99, 228, 0.2);
+    color: rgb(167, 29, 29);
+    border: 2px solid rgb(13, 202, 6);
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+/* Weather Icon */
+.weather-graphic {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.cloud {
+    width: 250px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.cloud::before,
+.cloud::after {
+    content: '';
+    position: absolute;
+    background: inherit;
+    border-radius: 50%;
+}
+
+.cloud::before {
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    left: 30px;
+}
+
+.cloud::after {
+    width: 150px;
+    height: 150px;
+    top: -90px;
+    right: 20px;
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background-color: #ffc107;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.sun::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 
+        0 0 0 10px rgba(255, 193, 7, 0.4),
+        0 0 0 25px rgba(255, 193, 7, 0.2),
+        0 0 0 40px rgba(255, 193, 7, 0.1);
+    border-radius: 50%;
+}
